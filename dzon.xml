@@ -1,0 +1,19 @@
+<ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Information ShortName="BG and Logo" LongName="BG and Logo" Description="Fullscreen screenshot with Logo wheel in the corner"  Author="dzonc"/>
+	<Viewport Color="#00000000" Width="640" Height="400"/>
+	<Drawings>
+		<Item Type="Screenshot">
+			<Display X="105%" Y="0%" Width="100%" Height="100%" KeepRatio="true" Anchor="TopRight" Antialiasing="None" Transparency="0.0"/>
+		</Item>
+		<Item Type="LocalFile" LocalFilePath="bg75.png">
+			<Display X="0%" Y="0%" Width="640" Height="480" KeepRatio="false" Anchor="TopLeft" Antialiasing="None" Transparency="0.0"/>
+		</Item>
+		<Item Type="LocalFile" LocalFilePath="overlay.png">
+			<Display X="0%" Y="0%" Width="640" Height="480" KeepRatio="false" Anchor="TopLeft" Antialiasing="None" Transparency="0.0"/>
+		</Item>
+		<Item Type="Wheel">
+      		<Display X="95%" Y="15%" Width="50%" Height="37.5%" Anchor="TopRight" Antialiasing="Medium" IfSystem="IsNotInTheList:2"/>
+        	<Fallback Type="Text" Text="%name%"  TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic" IfSystem="IsNotInTheList:2"/>
+    	</Item>
+	</Drawings>
+</ImageComposition>
